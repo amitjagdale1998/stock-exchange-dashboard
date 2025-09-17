@@ -22,6 +22,7 @@ function App() {
   return (
     <Sidebar onMenuSelect={handleMenuSelect}>
       <Routes>
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/portfolios" element={<Portfolios />} />
         <Route exact path="/experimental" element={<Experimental />} />
